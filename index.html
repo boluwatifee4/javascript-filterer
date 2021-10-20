@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="filter.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h1>FILTER HOUSES</h1>
+    <button id="filt">FILTER</button>
+  </header>
+  <div class="filt-list">
+    <ul>
+      <li><a href="#" id="lag">LAGOS</a></li>
+      <li><a href="#">Oyo</a></li>
+      <li><a href="#">Ondo</a></li>
+      <li><a href="#">Osun</a></li>
+      <li><a href="#">Ekiti</a></li>
+      <li><a href="#">Edo</a></li>
+      <li><a href="#">Ogun</a></li>
+    </ul>
+  </div>
+  <div class="hcards">
+    <h1 id="output"></h1>
+  </div>
+
+  <script>
+    let houses = {
+      cat: [
+        { type: "1 Bedroom", location: "lagos", tiling: "not tiled" },
+        { type: "Self-Contain", location: "oyo", tiling: "tiled" },
+        { type: "3 Bedroom", location: "ondo", tiling: "tiled" },
+        { type: "Room and Parlour", location: "ogun", tiling: "tiled" },
+        { type: "Room", location: "osun", tiling: "tiled" },
+        { type: "Duplex", location: "ekiti", tiling: "tiled" },
+        { type: "Shop", location: "edo", tiling: "tiled" },
+        { type: "Hall", location: "ogun", tiling: "tiled" },
+        { type: "2 Bedroom", location: "ondo", tiling: "not tiled" },
+        { type: "5 Bedroom", location: "ekiti", tiling: " not tiled" },
+        { type: "Room", location: "oyo", tiling: "tiled" },
+        {
+          type: "4 Bedroom",
+          location: "lagos",
+          tiling: "not tiled"
+        },
+      ]
+    }
+
+//First corrections
+    let house = houses.cat
+    let show = "";
+    function outI() {
+      for (let i of house) {
+        show += `
+        <div class="cards">
+            <h3>Type: ${i.type}</h6>
+            <p>Location: ${i.location}</p>
+            <p>Tiling: ${i.tiling}</p>
+        </div>
+        `;
+      
+      }
+    }
+    outI()
+    document.getElementById('output').innerHTML = show;
+let lagosHouse =  house.filter(lag => lag.location === 'oyo');
+// document.getElementById('output').innerHTML = lagosHouse;
+
+console.log(lagosHouse);
+
+//     let  = [];
+// for (let i = 0; i <.length; i++) {
+//     if (house[i].location === 'lagos') {
+//         lagosHouse.push(house[i]);
+//     }
+// }
+// console.log(lagosHouse);
+
+// var newLag = house.location.filter(function (el)
+// {
+//   return el.location == 'lagos'
+
+// }
+// );
+// console.log(newLag);
+
+
+
+
+
+    // const lagos = house.filter(function (locator) {
+    //  
+    // })
+    // const lagos = house
+   
+    
+    // document.getElementById('output').innerHTML = lagos;
+    // 
+    //
+//  =>{
+//    for(i=loca; i<loca.length; i++){
+//      console.log(i)
+//    }
+//  })
+
+
+  </script>
+
+  <script>
+    document.getElementById("filt").addEventListener('click', () => {
+      document.querySelector('.filt-list').style.display = "block";
+    })
+  </script>
+</body>
+
+</html>
