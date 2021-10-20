@@ -28,8 +28,9 @@ header{
     margin: 2rem;
     border-bottom: 1px solid;
     padding: 1rem;
+    gap: 1rem;
 }
-#filt{
+#filt, #filCat{
     border: none;
     background-color: rgb(4, 122, 40);
     color: white;
@@ -39,8 +40,9 @@ header{
     border-radius: 5px
 }
 .filt-list{
+    cursor: pointer;
     display: none;
-    left: 68%;
+    left: 50%;
     padding: 1rem;
     width: fit-content;
     position: absolute;
@@ -51,10 +53,65 @@ header{
 .filt-list ul li{
     padding: .5rem;
     border: 1px solid rgb(4, 122, 40);
-    margin: .3rem;
+    margin: .7rem;
     border-radius: 5px;
 
 }
 .filt-list ul li a{
     color: black;
+}
+.redLag{
+    color: red;
+}
+
+.filt-cate{
+    display: none;
+    border: 1px solid red;
+    cursor: pointer;
+    width: fit-content;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    left: 70%;
+    top: 16%;
+    padding: .2rem;
+    width: fit-content;
+    position: absolute;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 50%);
+    background-color: white;
+}
+form{
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    padding: .5rem;
+    border-radius: 10px;
+}
+.li{
+    text-align: left;
+    align-items: left;
+    display: flex;
+    gap: .6rem;
+    justify-content: left;
+    padding: .5rem;
+}
+input{
+    margin: .5rem;
+    margin-right: 0;
+}
+span{
+    margin: .5rem;
+    margin-left: 0;
+}   
+.x, .xl{
+    background-color: red;
+    padding: .5rem;
+    border: 1px solid rgb(4, 122, 40);
+    margin: .4rem;
+    border-radius: 5px;
+    color: white;
 }

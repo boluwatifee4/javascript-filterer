@@ -12,109 +12,68 @@
 <body>
   <header>
     <h1>FILTER HOUSES</h1>
-    <button id="filt">FILTER</button>
+    <button id="filt">FILTER BY LOCATION</button>
+    <button id="filCat">FILTER CATEGORIES</button>
   </header>
   <div class="filt-list">
+    <span class="xl">X</span>
     <ul>
       <li><a href="#" id="lag">LAGOS</a></li>
-      <li><a href="#">Oyo</a></li>
-      <li><a href="#">Ondo</a></li>
-      <li><a href="#">Osun</a></li>
-      <li><a href="#">Ekiti</a></li>
-      <li><a href="#">Edo</a></li>
-      <li><a href="#">Ogun</a></li>
+      <li><a href="#" id="oyo">Oyo</a></li>
+      <li><a href="#" id="ondo">Ondo</a></li>
+      <li><a href="#" id="osun">Osun</a></li>
+      <li><a href="#" id="ekiti">Ekiti</a></li>
+      <li><a href="#" id="edo">Edo</a></li>
+      <li><a href="#" id="ogun">Ogun</a></li>
     </ul>
   </div>
-  <div class="hcards">
-    <h1 id="output"></h1>
+
+  <div class="filt-cate">
+    <span class="x">X</span>
+    <form>
+     <div class="li"><input type="checkbox" id="tile"><span>Houses with Tiling</span></div>
+     <div class="li"> <input type="checkbox" id="Wtile"> <span>Houses without Tiling</span></div>
+      <div class="li"><input type="checkbox" id="type"> <span>1 Bedroom</span></div>
+     <div class="li"> <input type="checkbox" id="type2"> <span>2 Bedroom</span></div>
+     <div class="li"> <input type="checkbox" id="typeR"> <span>room</span></div>
+      <div class="li"><input type="checkbox" id="typeD"> <span>Duplex</span></div>
+      <div class="li"><input type="checkbox" id="typeH"> <span>Hall</span></div>
+      <div class="li"><input type="checkbox" id="typeS"> <span>Shop</span></div>
+      <div class="li"><input type="checkbox" id="type4"> <span>4 Bedroom</span></div>
+      <div class="li"><input type="checkbox" id="typeSC"> <span>Self-Contain</span></div>
+      <button id="filtCate">FILTER</button>
+    </form>
   </div>
 
-  <script>
-    let houses = {
-      cat: [
-        { type: "1 Bedroom", location: "lagos", tiling: "not tiled" },
-        { type: "Self-Contain", location: "oyo", tiling: "tiled" },
-        { type: "3 Bedroom", location: "ondo", tiling: "tiled" },
-        { type: "Room and Parlour", location: "ogun", tiling: "tiled" },
-        { type: "Room", location: "osun", tiling: "tiled" },
-        { type: "Duplex", location: "ekiti", tiling: "tiled" },
-        { type: "Shop", location: "edo", tiling: "tiled" },
-        { type: "Hall", location: "ogun", tiling: "tiled" },
-        { type: "2 Bedroom", location: "ondo", tiling: "not tiled" },
-        { type: "5 Bedroom", location: "ekiti", tiling: " not tiled" },
-        { type: "Room", location: "oyo", tiling: "tiled" },
-        {
-          type: "4 Bedroom",
-          location: "lagos",
-          tiling: "not tiled"
-        },
-      ]
-    }
+  <div class="hcards">
+    <h1 id="output"></h1>
+    <h1 id="outpu"></h1>
+    <h1 id="outp"></h1>
+    <h1 id="out"></h1>
+    <h1 id="ou"></h1>
+    <h1 id="o"></h1>
+    <h1 id="O"></h1>
+    <h1 id="Out"></h1>
+    <h1 id="Ou"></h1>
+    <h1 id="S"></h1>
+  </div>
 
-//First corrections
-    let house = houses.cat
-    let show = "";
-    function outI() {
-      for (let i of house) {
-        show += `
-        <div class="cards">
-            <h3>Type: ${i.type}</h6>
-            <p>Location: ${i.location}</p>
-            <p>Tiling: ${i.tiling}</p>
-        </div>
-        `;
-      
-      }
-    }
-    outI()
-    document.getElementById('output').innerHTML = show;
-let lagosHouse =  house.filter(lag => lag.location === 'oyo');
-// document.getElementById('output').innerHTML = lagosHouse;
-
-console.log(lagosHouse);
-
-//     let  = [];
-// for (let i = 0; i <.length; i++) {
-//     if (house[i].location === 'lagos') {
-//         lagosHouse.push(house[i]);
-//     }
-// }
-// console.log(lagosHouse);
-
-// var newLag = house.location.filter(function (el)
-// {
-//   return el.location == 'lagos'
-
-// }
-// );
-// console.log(newLag);
-
-
-
-
-
-    // const lagos = house.filter(function (locator) {
-    //  
-    // })
-    // const lagos = house
-   
-    
-    // document.getElementById('output').innerHTML = lagos;
-    // 
-    //
-//  =>{
-//    for(i=loca; i<loca.length; i++){
-//      console.log(i)
-//    }
-//  })
-
-
-  </script>
+  <script src="filter.js"></script>
 
   <script>
     document.getElementById("filt").addEventListener('click', () => {
       document.querySelector('.filt-list').style.display = "block";
     })
+    document.querySelector(".xl").addEventListener('click', () => {
+      document.querySelector('.filt-list').style.display = "none";
+    })
+    document.getElementById("filCat").addEventListener('click', () => {
+      document.querySelector('.filt-cate').style.display = "block";
+    })
+    document.querySelector(".x").addEventListener('click', () => {
+      document.querySelector('.filt-cate').style.display = "none";
+    })
+
   </script>
 </body>
 
