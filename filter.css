@@ -162,6 +162,7 @@ span{
         width: 100%;
     }
     #filt, #filCat{
+        margin: 0 .3rem;
         padding: .3rem .3rem;
         font-size: .5rem;
     }
