@@ -6,21 +6,54 @@
     text-decoration: none;
 }
 
-.hcards{
-    display: flex;
-    justify-content: center;
+/* {
+    margin: 1rem 2rem;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  align-items: center;
+  height: fit-content;
+} */
+#output, #utput,.hcards,#outpu,#outp,#out,#ou,#o,#O,#Out,#Ou,#S{
+    margin: 1rem 2rem;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  align-items: center;
+  height: fit-content;
 }
 .cards{
-   display: flex;
-   justify-content: space-evenly;
-   gap: 2rem;
+  width: 30%;
+  max-width: fit-content;
    background-color: #fff;
     padding: 32px 36px;
     border: 1px solid rgba(2,43,105,.07);
     box-shadow: 1px 12px 24px rgb(2 43 105 / 5%);
     border-radius: 20px;
-    margin: 1rem;
-
+    text-align: center;
+    margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+    flex-direction: column;
+}
+.prop{
+    padding: .3rem 0;
+    display: flex;
+    gap: 1rem;
+    border-top: .01px solid;
+}
+.cards, h3,p{
+    text-align: left;
+    font-size: 1.3rem;    
 }
 header{
     display: flex;
@@ -114,4 +147,31 @@ span{
     margin: .4rem;
     border-radius: 5px;
     color: white;
+}
+.h-img{
+    width: 425px;
+    height: 240px;
+    margin: 10px;
+    object-fit: contain;
+}
+@media only screen  and (max-width:1024px) and (min-width:320px){
+    header h1{
+        font-size: 1rem;
+    }
+    .cards{
+        width: 100%;
+    }
+    #filt, #filCat{
+        padding: .3rem .3rem;
+        font-size: .5rem;
+    }
+    .filt-list{
+        left: 38%;
+    }
+    .filt-cate{
+        left: 30%;
+    }
+    .cards ,h3, p{
+        font-size: 1rem;
+    }
 }

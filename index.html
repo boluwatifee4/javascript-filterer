@@ -44,30 +44,30 @@
       <button id="filtCate">FILTER</button>
     </form>
   </div>
-
-  <div class="hcards">
-    <h1 id="output"></h1>
-    <h1 id="outpu"></h1>
-    <h1 id="outp"></h1>
-    <h1 id="out"></h1>
-    <h1 id="ou"></h1>
-    <h1 id="o"></h1>
-    <h1 id="O"></h1>
-    <h1 id="Out"></h1>
-    <h1 id="Ou"></h1>
-    <h1 id="S"></h1>
-  </div>
-
+  <div id="output"></div>
+  <div id="utput"></div>
+  <div class="hcards"> </div>
+  <div id="outpu"></div>
+  <div id="outp"></div>
+  <div id="out"></div>
+  <div id="ou"></div>
+  <div id="o"></div>
+  <div id="O"></div>
+  <div id="Out"></div>
+  <div id="Ou"></div>
+  <div id="S"></div>
   <script src="filter.js"></script>
 
   <script>
     document.getElementById("filt").addEventListener('click', () => {
+      document.querySelector('.filt-cate').style.display = "none";
       document.querySelector('.filt-list').style.display = "block";
     })
     document.querySelector(".xl").addEventListener('click', () => {
       document.querySelector('.filt-list').style.display = "none";
     })
     document.getElementById("filCat").addEventListener('click', () => {
+      document.querySelector('.filt-list').style.display = "none";
       document.querySelector('.filt-cate').style.display = "block";
     })
     document.querySelector(".x").addEventListener('click', () => {
