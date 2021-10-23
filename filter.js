@@ -64,6 +64,7 @@ document.getElementById("lag").addEventListener('click', () => {
     }
     document.getElementById('output').innerHTML = elemString;
     document.querySelector('.filt-list').style.display = "none";
+    document.getElementById('output').style.display = "block";
 })
 
 
@@ -86,6 +87,7 @@ document.getElementById("oyo").addEventListener('click', () => {
     }
     document.getElementById('output').innerHTML = elemString;
     document.querySelector('.filt-list').style.display = "none";
+    document.getElementById('output').style.display = "block";
 })
 
 
@@ -107,6 +109,7 @@ document.getElementById("ondo").addEventListener('click', () => {
     }
     document.getElementById('output').innerHTML = elemString;
     document.querySelector('.filt-list').style.display = "none";
+    document.getElementById('output').style.display = "block";
 })
 
 
@@ -128,6 +131,7 @@ document.getElementById("osun").addEventListener('click', () => {
     }
     document.getElementById('output').innerHTML = elemString;
     document.querySelector('.filt-list').style.display = "none";
+    document.getElementById('output').style.display = "block";
 })
 
 
@@ -149,6 +153,7 @@ document.getElementById("ekiti").addEventListener('click', () => {
     }
     document.getElementById('output').innerHTML = elemString;
     document.querySelector('.filt-list').style.display = "none";
+    document.getElementById('output').style.display = "block";
 })
 
 
@@ -170,6 +175,7 @@ document.getElementById("edo").addEventListener('click', () => {
     }
     document.getElementById('output').innerHTML = elemString;
     document.querySelector('.filt-list').style.display = "none";
+    document.getElementById('output').style.display = "block";
 })
 
 document.getElementById("ogun").addEventListener('click', () => {
@@ -190,5 +196,6 @@ document.getElementById("ogun").addEventListener('click', () => {
     }
     document.getElementById('output').innerHTML = elemString;
     document.querySelector('.filt-list').style.display = "none";
+    document.getElementById('output').style.display = "block";
 })
 
