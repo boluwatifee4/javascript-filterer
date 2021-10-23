@@ -1,6 +1,4 @@
-// checkbox functions
-// NOTE no be me go write new iterator or whatever up and dan.. 
-//i just copy my previous code change values don't get confused by ogunHouse it is just used 
+// checkbox submit functions
 document.getElementById("filtCate").addEventListener('click', (e) => {
     e.preventDefault()
     check()
@@ -8,6 +6,10 @@ document.getElementById("filtCate").addEventListener('click', (e) => {
     document.querySelector('#output').style.display = "none";
 })
 
+
+// event listener to filter out the selected categories by user
+// tooo lazy to start assign new variable name NOTE ogunHouse in this function has no
+// connection with previous functions 
 function check(){
     if (document.getElementById('tile').checked) {
         let ogunHouse = house.filter(ogun => ogun.tiling === 'tiled');
@@ -25,7 +27,7 @@ function check(){
 `;
         }
         document.getElementById('utput').innerHTML = elemString;
-        document.getElementById("utput").style.display="block"
+        document.getElementById("utput").style.display="flex"
     } else{
         document.getElementById("utput").style.display="none"
     } if (document.getElementById('type').checked) {
@@ -43,7 +45,7 @@ function check(){
             </div>
 `;
         }
-        document.getElementById("outpu").style.display="block"
+        document.getElementById("outpu").style.display="flex"
         document.getElementById('outpu').innerHTML = elemString;
 
     }  else{
@@ -65,7 +67,7 @@ function check(){
 `;
         }
         document.getElementById('outp').innerHTML = elemString;
-        document.getElementById("outp").style.display="block"
+        document.getElementById("outp").style.display="flex"
     } else{
         document.getElementById("outp").style.display="none"
     }  
@@ -85,7 +87,7 @@ function check(){
 `;
         }
         document.getElementById('out').innerHTML = elemString;
-        document.getElementById("out").style.display="block"
+        document.getElementById("out").style.display="flex"
     } else{
         document.getElementById('out').style.display="none"
     } 
@@ -104,7 +106,7 @@ function check(){
             </div>
 `;
         }
-        document.getElementById("ou").style.display="block"
+        document.getElementById("ou").style.display="flex"
         document.getElementById('ou').innerHTML = elemString;
     } else{
         document.getElementById('ou').style.display="none"
@@ -125,7 +127,7 @@ function check(){
 `;
         }
         document.getElementById('o').innerHTML = elemString;
-        document.getElementById("o").style.display="block"
+        document.getElementById("o").style.display="flex"
     } else{
         document.getElementById('o').style.display="none"
     }  
@@ -145,7 +147,7 @@ function check(){
 `;
         }
         document.getElementById('O').innerHTML = elemString;
-        document.getElementById("O").style.display="block"
+        document.getElementById("O").style.display="flex"
     } else{
         document.getElementById('O').style.display="none"
     } 
@@ -165,7 +167,7 @@ function check(){
 `;
         }
         document.getElementById('Out').innerHTML = elemString;
-        document.getElementById("Out").style.display="block"
+        document.getElementById("Out").style.display="flex"
     } else{
         document.getElementById('Out').style.display="none"
     } 
@@ -185,7 +187,7 @@ function check(){
 `;
         }
         document.getElementById('Ou').innerHTML = elemString;
-        document.getElementById("Ou").style.display="block"
+        document.getElementById("Ou").style.display="flex"
     } else{
         document.getElementById('Ou').style.display="none"
     } 
@@ -204,7 +206,7 @@ function check(){
             </div>
 `;
         }
-        document.getElementById("S").style.display="block"
+        document.getElementById("S").style.display="flex"
         document.getElementById('S').innerHTML = elemString;
     } else{
         document.getElementById('S').style.display="none"

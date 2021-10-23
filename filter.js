@@ -27,6 +27,8 @@ let houses = {
 
 let house = houses.cat
 let show = "";
+
+// function to loop out all houses in array Houses
 function outI() {
     for (let i of house) {
         show += `
@@ -40,12 +42,13 @@ function outI() {
       </div>
       `;
     }
-    //Outside the loop
     document.getElementById('output').innerHTML = show;
 }
 
-outI()
+outI() 
 
+
+// event listener to filter out locations
 document.getElementById("lag").addEventListener('click', () => {
 
     let lagosHouse = house.filter(lag => lag.location === 'lagos');
@@ -64,7 +67,7 @@ document.getElementById("lag").addEventListener('click', () => {
     }
     document.getElementById('output').innerHTML = elemString;
     document.querySelector('.filt-list').style.display = "none";
-    document.getElementById('output').style.display = "block";
+    document.getElementById('output').style.display = "flex";
 })
 
 
@@ -87,7 +90,7 @@ document.getElementById("oyo").addEventListener('click', () => {
     }
     document.getElementById('output').innerHTML = elemString;
     document.querySelector('.filt-list').style.display = "none";
-    document.getElementById('output').style.display = "block";
+    document.getElementById('output').style.display = "flex";
 })
 
 
@@ -109,7 +112,7 @@ document.getElementById("ondo").addEventListener('click', () => {
     }
     document.getElementById('output').innerHTML = elemString;
     document.querySelector('.filt-list').style.display = "none";
-    document.getElementById('output').style.display = "block";
+    document.getElementById('output').style.display = "flex";
 })
 
 
@@ -131,7 +134,7 @@ document.getElementById("osun").addEventListener('click', () => {
     }
     document.getElementById('output').innerHTML = elemString;
     document.querySelector('.filt-list').style.display = "none";
-    document.getElementById('output').style.display = "block";
+    document.getElementById('output').style.display = "flex";
 })
 
 
@@ -153,7 +156,7 @@ document.getElementById("ekiti").addEventListener('click', () => {
     }
     document.getElementById('output').innerHTML = elemString;
     document.querySelector('.filt-list').style.display = "none";
-    document.getElementById('output').style.display = "block";
+    document.getElementById('output').style.display = "flex";
 })
 
 
@@ -175,7 +178,7 @@ document.getElementById("edo").addEventListener('click', () => {
     }
     document.getElementById('output').innerHTML = elemString;
     document.querySelector('.filt-list').style.display = "none";
-    document.getElementById('output').style.display = "block";
+    document.getElementById('output').style.display = "flex";
 })
 
 document.getElementById("ogun").addEventListener('click', () => {
@@ -196,6 +199,6 @@ document.getElementById("ogun").addEventListener('click', () => {
     }
     document.getElementById('output').innerHTML = elemString;
     document.querySelector('.filt-list').style.display = "none";
-    document.getElementById('output').style.display = "block";
+    document.getElementById('output').style.display = "flex";
 })
 
