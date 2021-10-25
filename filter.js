@@ -1,25 +1,25 @@
 let houses = {
     cat: [
-        { type: "1 Bedroom", location: "lagos", tiling: "not tiled", image: "payment-support-img.png" },
-        { type: "Self-Contain", location: "oyo", tiling: "tiled", image: "payment-support-img.png" },
-        { type: "1 Bedroom", location: "ondo", tiling: "tiled", image: "payment-support-img.png" },
-        { type: "Room and Parlour", location: "ogun", tiling: "tiled", image: "payment-support-img.png" },
-        { type: "Room", location: "osun", tiling: "tiled", image: "payment-support-img.png" },
-        { type: "Duplex", location: "ekiti", tiling: "tiled", image: "payment-support-img.png" },
-        { type: "Shop", location: "edo", tiling: "tiled", image: "payment-support-img.png" },
-        { type: "Hall", location: "ogun", tiling: "tiled", image: "payment-support-img.png" },
-        { type: "2 Bedroom", location: "ondo", tiling: "not tiled", image: "payment-support-img.png" },
-        { type: "5 Bedroom", location: "ekiti", tiling: " not tiled", image: "payment-support-img.png" },
-        { type: "Room", location: "oyo", tiling: "tiled", image: "payment-support-img.png" },
+        { type: "1 Bedroom", location: "lagos", tiling: "not tiled", image: "1 bed room.jpg" },
+        { type: "Self-Contain", location: "oyo", tiling: "tiled", image: "OIP.jpg" },
+        { type: "1 Bedroom", location: "ondo", tiling: "tiled", image: "1 bed room.jpg" },
+        { type: "Room and Parlour", location: "ogun", tiling: "tiled", image: "r-p.png" },
+        { type: "Room", location: "osun", tiling: "tiled", image: "rooms.jpg" },
+        { type: "Duplex", location: "ekiti", tiling: "tiled", image: "duplex.jpg" },
+        { type: "Shop", location: "edo", tiling: "tiled", image: "shop.jpg" },
+        { type: "Hall", location: "ogun", tiling: "tiled", image: "OIP.jpg" },
+        { type: "2 Bedroom", location: "ondo", tiling: "not tiled", image: "OIP.jpg" },
+        { type: "5 Bedroom", location: "ekiti", tiling: " not tiled", image: "hall.jpg" },
+        { type: "Room", location: "oyo", tiling: "tiled", image: "rooms.jpg" },
         {
             type: "4 Bedroom",
             location: "lagos",
-            tiling: "not tiled", image: "payment-support-img.png"
+            tiling: "not tiled", image: "4-bedroom.jpg"
         },
         {
             type: "4 Bedroom",
             location: "ondo",
-            tiling: "tiled", image: "payment-support-img.png"
+            tiling: "tiled", image: "4-bedroom.jpg"
         },
     ]
 }
