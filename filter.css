@@ -64,7 +64,7 @@ header{
     border-radius: 5px
 }
 .filt-list{
-    animation: slideFromTop 2s linear;
+    animation: slideFromTop 1s linear;
     cursor: pointer;
     display: none;
     left: 50%;
@@ -99,7 +99,7 @@ header{
 }
 
 .filt-cate{
-    animation: slideFromTop 2s linear;
+    animation: slideFromTop 1s linear;
     display: none;
     cursor: pointer;
     width: fit-content;
