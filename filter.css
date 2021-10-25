@@ -39,6 +39,9 @@
     gap: 1rem;
     border-top: .01px solid;
 }
+.prop p{
+    margin: .5rem;
+}
 .cards, h3,p{
     text-align: left;
     font-size: 1.3rem;    
