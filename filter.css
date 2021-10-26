@@ -24,15 +24,14 @@
    background-color: #fff;
     padding: 0px 0px;
     border: 1px solid rgba(2,43,105,.07);
-    box-shadow: 10px 20px 30px rgb(2 43 105 / 5%);
-    border-radius: 20px;
+    box-shadow: 0px 50px 30px rgb(2 43 105 / 5%);
+    border-radius: 25px;
     text-align: left;
     margin-top: 2rem;
   display: flex;
   justify-content: center;
     flex-direction: column;
     overflow: hidden;
-    border: 2px solid;
 }
 .prop{
     padding: .3rem 0;
