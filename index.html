@@ -15,6 +15,11 @@
     <button id="filt">FILTER BY LOCATION</button>
     <button id="filCat">FILTER CATEGORIES</button>
   </header>
+  <div class="slidecontainer">
+    <h6>Scroll Controller</h6>
+    <input type="range" min="0" max="4000" value="0" class="slider" id="myRange">
+    <p>Value: <span id="demo"></span></p>
+  </div>
   <div class="filt-list">
     <span class="xl">X</span>
     <ul>
@@ -74,6 +79,18 @@
     })
 
   </script>
+  <script>
+    //input type range controlling scroll bar
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+  out = this.value;
+  window.scrollTo({left: 0, top: out, behavior: "smooth"});
+}
+</script>
 </body>
 
 </html>
