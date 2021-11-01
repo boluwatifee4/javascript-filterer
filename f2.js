@@ -1,10 +1,19 @@
 // checkbox submit functions
 document.getElementById("filtCate").addEventListener('click', (e) => {
     e.preventDefault()
-    check()
+    checkTiling()
     document.querySelector('.filt-cate').style.display = "none";
     document.querySelector('#output').style.display = "none";
-})
+    document.querySelector('.filt-type').style.display = "none";
+    document.getElementById("outpu").style.display="none";
+    document.getElementById("outp").style.display="none";
+    document.getElementById('out').style.display="none";
+    document.getElementById('ou').style.display="none";
+    document.getElementById('o').style.display="none";
+    document.getElementById('O').style.display="none";
+    document.getElementById('Out').style.display="none;"
+    document.getElementById('Ou').style.display="none";
+});
 // checkbox submit functions
 document.getElementById("fic").addEventListener('click', (e) => {
     e.preventDefault()
@@ -19,7 +28,7 @@ document.getElementById("fic").addEventListener('click', (e) => {
 // event listener to filter out the selected categories by user
 // tooo lazy to start assign new variable name NOTE ogunHouse in this function has no
 // connection with previous functions 
-function check(){
+function checkTiling (){
     if (document.getElementById('tile').checked) {
         let ogunHouse = house.filter(ogun => ogun.tiling === 'tiled');
         let elemString = ""
@@ -39,7 +48,30 @@ function check(){
         document.getElementById("utput").style.display="flex"
     } else{
         document.getElementById("utput").style.display="none"
-    } if (document.getElementById('type').checked) {
+    }if (document.getElementById('Wtile').checked) {
+        let ogunHouse = house.filter(ogun => ogun.tiling === "not tiled");
+        let elemString = ""
+        for (ogunHouse of ogunHouse) {
+            elemString += `
+ <div class="cards">
+            <img src="${ogunHouse.image}" alt="" class="h-img">
+               <div class="prop">
+                   <p>Type: ${ogunHouse.type}</p>
+                   <p >Location: ${ogunHouse.location}</p>
+                   <p class="redLag">Tiling: ${ogunHouse.tiling}</p>
+               </div>
+            </div>
+`;
+        }
+        document.getElementById("S").style.display="flex"
+        document.getElementById('S').innerHTML = elemString;
+    } else{
+        document.getElementById('S').style.display="none"
+    } 
+}
+
+function check(){
+    if (document.getElementById('type').checked) {
         let ogunHouse = house.filter(ogun => ogun.type === "1 Bedroom");
         let elemString = ""
         for (ogunHouse of ogunHouse) {
@@ -199,26 +231,6 @@ function check(){
         document.getElementById("Ou").style.display="flex"
     } else{
         document.getElementById('Ou').style.display="none"
-    } 
-     if (document.getElementById('Wtile').checked) {
-        let ogunHouse = house.filter(ogun => ogun.tiling === "not tiled");
-        let elemString = ""
-        for (ogunHouse of ogunHouse) {
-            elemString += `
- <div class="cards">
-            <img src="${ogunHouse.image}" alt="" class="h-img">
-               <div class="prop">
-                   <p>Type: ${ogunHouse.type}</p>
-                   <p >Location: ${ogunHouse.location}</p>
-                   <p class="redLag">Tiling: ${ogunHouse.tiling}</p>
-               </div>
-            </div>
-`;
-        }
-        document.getElementById("S").style.display="flex"
-        document.getElementById('S').innerHTML = elemString;
-    } else{
-        document.getElementById('S').style.display="none"
     } 
 }
 
