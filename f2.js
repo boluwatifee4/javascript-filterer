@@ -11,6 +11,8 @@ document.getElementById("fic").addEventListener('click', (e) => {
     check()
     document.querySelector('.filt-type').style.display = "none";
     document.querySelector('#output').style.display = "none";
+    document.getElementById("utput").style.display="none"
+    document.getElementById("S").style.display="none"
 })
 
 
