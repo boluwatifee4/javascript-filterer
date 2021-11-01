@@ -78,7 +78,6 @@ document.getElementById("oyo").addEventListener('click', () => {
     for (oyoHouse of oyoHouse) {
         elemString += `
  <div class="cards">
- <div class="cards">
  <img src="${oyoHouse.image}" alt="" class="h-img">
     <div class="prop">
         <p>Type: ${oyoHouse.type}</p>

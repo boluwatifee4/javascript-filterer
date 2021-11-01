@@ -5,6 +5,13 @@ document.getElementById("filtCate").addEventListener('click', (e) => {
     document.querySelector('.filt-cate').style.display = "none";
     document.querySelector('#output').style.display = "none";
 })
+// checkbox submit functions
+document.getElementById("fic").addEventListener('click', (e) => {
+    e.preventDefault()
+    check()
+    document.querySelector('.filt-type').style.display = "none";
+    document.querySelector('#output').style.display = "none";
+})
 
 
 // event listener to filter out the selected categories by user
@@ -36,7 +43,7 @@ function check(){
         for (ogunHouse of ogunHouse) {
             elemString += `
             <div class="cards">
-            <img src="${ogunHouse.image}" alt="" class="h-img">
+            <img src="${ogunHouse.image}" alt="" class=" h-img">
                <div class="prop">
                    <p class="redLag">Type: ${ogunHouse.type}</p>
                    <p>Location: ${ogunHouse.location}</p>

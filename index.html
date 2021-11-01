@@ -6,20 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="filter.css">
+  <script src="https://kit.fontawesome.com/5daf43d836.js" crossorigin="anonymous"></script>
   <title>JS FILTER</title>
 </head>
 
 <body>
   <header>
     <h1>FILTER HOUSES</h1>
-    <button id="filt">FILTER BY LOCATION</button>
-    <button id="filCat">FILTER CATEGORIES</button>
   </header>
-  <div class="slidecontainer">
-    <h6>Scroll Controller</h6>
-    <input type="range" min="0" max="3800" value="0" class="slider" id="myRange">
-    <p>Value: <span id="demo"></span></p>
+
+
+  <div class="f-dis">
+    <ul>
+      <li><i class="fas fa-filter"></i> FILTER BY</li>
+      <li id="filt">LOCATION <i class="fas fa-sort-down"></i></li>
+      <li id="fc">TYPE <i class="fas fa-sort-down"></i></li> 
+      <li id="filCat">TILING CONDITION <i class="fas fa-sort-down"></i></li>
+    </ul>
   </div>
+ 
   <div class="filt-list">
     <span class="xl">X</span>
     <ul>
@@ -32,11 +37,20 @@
       <li><a href="#" id="ogun">Ogun</a></li>
     </ul>
   </div>
+
   <div class="filt-cate">
     <span class="x">X</span>
     <form>
      <div class="li"><input type="checkbox" id="tile"><span>Houses with Tiling</span></div>
      <div class="li"> <input type="checkbox" id="Wtile"> <span>Houses without Tiling</span></div>
+      <button id="filtCate">FILTER</button>
+    </form>
+  </div>
+
+  <div class="filt-type">
+    <span class="xf">X</span>
+    <form>
+    <button id="fic"> VIEW FILTER</button>
       <div class="li"><input type="checkbox" id="type"> <span>1 Bedroom</span></div>
      <div class="li"> <input type="checkbox" id="type2"> <span>2 Bedroom</span></div>
      <div class="li"> <input type="checkbox" id="typeR"> <span>room</span></div>
@@ -45,9 +59,9 @@
       <div class="li"><input type="checkbox" id="typeS"> <span>Shop</span></div>
       <div class="li"><input type="checkbox" id="type4"> <span>4 Bedroom</span></div>
       <div class="li"><input type="checkbox" id="typeSC"> <span>Self-Contain</span></div>
-      <button id="filtCate">FILTER</button>
     </form>
   </div>
+
   <div id="output"></div>
   <div id="utput"></div>
   <div class="hcards"> </div>
@@ -60,6 +74,12 @@
   <div id="Out"></div>
   <div id="Ou"></div>
   <div id="S"></div>
+
+  <div class="slidecontainer">
+    <input type="range" min="0" max="3800" value="1800" class="slider" id="myRange">
+    <p>Value: <span id="demo"></span></p>
+  </div>
+
   <script src="filter.js"></script>
 <script src="f2.js"></script>
   <script>
@@ -74,11 +94,20 @@
       document.querySelector('.filt-list').style.display = "none";
       document.querySelector('.filt-cate').style.display = "block";
     })
+    document.getElementById("fc").addEventListener('click', () => {
+      document.querySelector('.filt-list').style.display = "none";
+      document.querySelector('.filt-cate').style.display = "none";
+      document.querySelector('.filt-type').style.display = "block";
+    })
     document.querySelector(".x").addEventListener('click', () => {
       document.querySelector('.filt-cate').style.display = "none";
     })
+    document.querySelector(".xf").addEventListener('click', () => {
+      document.querySelector('.filt-type').style.display = "none";
+    })
 
   </script>
+
   <script>
     //input type range controlling scroll bar
 var slider = document.getElementById("myRange");
